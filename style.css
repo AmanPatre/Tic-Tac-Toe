@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0 ;
+    font-family: "Roboto", sans-serif;
+}
+nav ul li{
+    list-style: none;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.gameContainer{
+
+display: flex;
+justify-content: center;
+margin-top: 40px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+}
+.box{
+    border: 2px solid black ;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box:hover{
+    background-color: rgb(217, 194, 239);
+    cursor: pointer;
+}
+.gameInfo{
+    padding: 0 34px;
+}
+
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bd-0{
+    border-bottom: 0;
+}
+
+#reset{
+    margin: 0 10px;
+    padding: 5px 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(238, 225, 250);
+    font-weight: bolder;
+}
+
+.info{
+    font-size: 25px;
+}
